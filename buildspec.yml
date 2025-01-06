@@ -5,8 +5,13 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
+
   build:
     commands:
-      - echo Running build
-      - echo "Hello World"  # Corrected
+      - echo "Running build"
+      - echo "Hello World"  # Corrected command
       - npm run build
+
+  post_build:
+    commands:
+      - echo "Build completed successfully"
